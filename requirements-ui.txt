@@ -1,2 +1,2 @@
 # Optional browser smoke tests, separate from the standard-library core suite.
-playwright==1.48.0
+playwright==1.64.0
