@@ -1,3 +1,3 @@
 # Install in a dedicated virtual environment for Windows portable builds.
-PyInstaller>=6,<7
+PyInstaller>=6.22.3,<7
 -r requirements-windows.txt
