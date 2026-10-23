@@ -1,0 +1,2 @@
+# Optional: Windows reminder shortcut / notification integration.
+pywin32>=306; sys_platform == "win32"
