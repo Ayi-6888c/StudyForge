@@ -1,0 +1,17 @@
+name: Feature request
+description: Describe a learning problem before proposing a large feature.
+title: '[Feature] '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: At which learning step did you encounter a problem?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What observable outcome would make an improvement useful?
+      description: For example, fewer repeated actions, clearer evidence or completing revision on time.
+    validations:
+      required: true

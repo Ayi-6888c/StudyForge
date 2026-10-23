@@ -1,0 +1,23 @@
+name: Admissions content correction
+description: Correct eligibility or exam requirements with official sources and years.
+title: '[Content] '
+body:
+  - type: input
+    id: route
+    attributes:
+      label: Province, school, program, candidate category and year
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official URL and exact PDF page or clause
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Current content, correction and evidence
+      description: Distinguish permission, exclusion and unknowns. Similar program names alone do not establish eligibility.
+    validations:
+      required: true
