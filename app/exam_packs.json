@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "packs": [
+    {
+      "schema_version": 1,
+      "id": "hubei-hbnu-cs",
+      "version": "2026.10.22-v3",
+      "province": "湖北",
+      "institution": "湖北师范大学",
+      "source_major": "软件技术",
+      "target_major": "计算机科学与技术",
+      "target_major_code": "080901",
+      "exam_type": "普通专升本（普通考生学习路线）",
+      "latest_official_year": 2026,
+      "target_year": 2027,
+      "target_policy_status": "pending",
+      "exam_date": null,
+      "date_note": "2027简章与考试日期待公布；计划截止日为个人安排，非官方考试日。",
+      "eligibility_note": "2026普通考生要求湖北省普通高校全日制高职应届并如期毕业，不只看户籍；软件技术列入本专业接收范围。2027资格须按当年简章及院校审核重新确认。",
+      "rules": [
+        {
+          "subject": "c",
+          "name": "高级语言程序设计",
+          "minutes": 90,
+          "points": 150,
+          "mode": "闭卷笔试",
+          "organizer": "院校自主命题与评卷"
+        },
+        {
+          "subject": "english",
+          "name": "大学英语",
+          "minutes": 120,
+          "points": 100,
+          "mode": "闭卷笔试",
+          "organizer": "湖北省统一命题、考试与评卷"
+        }
+      ],
+      "question_rule": "按2026要求备考：无选择题、无判断题。2027公布后更新，不将历史题型分值当作新年度规则。",
+      "textbook": "谭浩强《C程序设计》第五版，清华大学出版社，ISBN 9787302481447",
+      "sources": [
+        {
+          "id": "hbnu-2026-admission",
+          "title": "湖北师范大学2026年普通专升本招生简章",
+          "year": 2026,
+          "url": "https://www.hbnu.edu.cn/2026/0130/c2552a189880/page.htm",
+          "checked_at": "2026-10-22",
+          "role": "考试方式、时长与分值；普通考生报考流程"
+        },
+        {
+          "id": "hbnu-2026-major",
+          "title": "2026报考专业对应表",
+          "year": 2026,
+          "url": "https://hswzq.hbnu.edu.cn/_upload/article/files/c2/ab/0dd059a04c3b8f12d22ca904da0e/95d736e5-b63b-4be4-bf8b-9fbb3078d9c5.pdf",
+          "checked_at": "2026-10-22",
+          "role": "软件技术列入计算机科学与技术接收专科专业"
+        },
+        {
+          "id": "hbnu-2026-c",
+          "title": "2026专业课考试大纲（第9页）",
+          "year": 2026,
+          "url": "https://hswzq.hbnu.edu.cn/_upload/article/files/c2/ab/0dd059a04c3b8f12d22ca904da0e/3e0c7eea-3c79-496c-a051-d47bdb7e714d.pdf",
+          "checked_at": "2026-10-22",
+          "role": "高级语言程序设计；参考谭浩强《C程序设计》第五版"
+        },
+        {
+          "id": "hubei-2026-english",
+          "title": "2026湖北专升本大学英语考试要求",
+          "year": 2026,
+          "url": "https://hswzq.hbnu.edu.cn/_upload/article/files/c2/ab/0dd059a04c3b8f12d22ca904da0e/bbcff636-1e3c-4a98-aefd-f1b1acbbf158.pdf",
+          "checked_at": "2026-10-22",
+          "role": "英语省统考；无选择、无判断"
+        },
+        {
+          "id": "hbnu-2023-c",
+          "title": "2023专业课考试大纲（历史题型参考）",
+          "year": 2023,
+          "url": "https://www.hbnu.edu.cn/_upload/article/files/ab/db/d738bdd2488b9ddc1d176f13e770/723424f8-7af1-4e74-bd92-2945ea319d07.pdf",
+          "checked_at": "2026-10-22",
+          "role": "仅用于了解历史程序题形式，不沿用历史分值或选择题"
+        }
+      ],
+      "modules": [
+        {
+          "id": "io",
+          "title": "输入输出与顺序程序",
+          "prerequisites": [],
+          "weight": 2,
+          "concepts": "程序骨架、变量、printf/scanf、整除与取模",
+          "exit_standard": "独立写两数运算、矩形面积、三位数拆分；说明每个格式符和取地址符的作用。"
+        },
+        {
+          "id": "types",
+          "title": "类型与表达式",
+          "prerequisites": [
+            "io"
+          ],
+          "weight": 3,
+          "concepts": "整数/实数、转换、优先级、逻辑与短路",
+          "exit_standard": "先手算再运行；区分整数除法和实数除法，解释每次类型转换。"
+        },
+        {
+          "id": "branch",
+          "title": "选择结构",
+          "prerequisites": [
+            "types"
+          ],
+          "weight": 3,
+          "concepts": "if/else、switch、边界与多条件",
+          "exit_standard": "列出条件分区，测试等号两侧及临界值；避免连写数学不等式。"
+        },
+        {
+          "id": "loop",
+          "title": "循环与数值算法",
+          "prerequisites": [
+            "branch"
+          ],
+          "weight": 6,
+          "concepts": "for/while/do-while、嵌套、break/continue",
+          "exit_standard": "能手工跟踪循环变量和累加器；从求和扩展到素数、数位和与迭代。"
+        },
+        {
+          "id": "arrays",
+          "title": "数组与排序查找",
+          "prerequisites": [
+            "loop"
+          ],
+          "weight": 5,
+          "concepts": "一维/二维数组、遍历、排序、查找",
+          "exit_standard": "理解合法下标，手写冒泡/选择排序、顺序/二分查找与矩阵处理。"
+        },
+        {
+          "id": "strings",
+          "title": "字符与字符串",
+          "prerequisites": [
+            "arrays"
+          ],
+          "weight": 4,
+          "concepts": "字符数组、终止符、字符串函数",
+          "exit_standard": "区分容量与长度；使用有界输入，处理空串、空格和末尾换行。"
+        },
+        {
+          "id": "functions",
+          "title": "函数与递归",
+          "prerequisites": [
+            "loop",
+            "arrays"
+          ],
+          "weight": 5,
+          "concepts": "参数、返回值、作用域、递归、静态变量",
+          "exit_standard": "把算法拆成函数，追踪值传递和递归调用；说明递归终止条件。"
+        },
+        {
+          "id": "pointers",
+          "title": "指针与数据传递",
+          "prerequisites": [
+            "arrays",
+            "functions",
+            "strings"
+          ],
+          "weight": 6,
+          "concepts": "地址、解引用、指针与数组、指针参数",
+          "exit_standard": "画内存示意图；独立用指针交换变量、遍历数组并返回统计结果。"
+        },
+        {
+          "id": "structs",
+          "title": "结构体与自定义类型",
+          "prerequisites": [
+            "pointers"
+          ],
+          "weight": 4,
+          "concepts": "结构体、结构体数组、typedef、枚举",
+          "exit_standard": "设计学生记录并排序统计；区分结构体成员访问与结构体指针访问。"
+        },
+        {
+          "id": "preproc",
+          "title": "预处理与综合语法",
+          "prerequisites": [
+            "types",
+            "functions"
+          ],
+          "weight": 2,
+          "concepts": "宏、条件编译、作用域与存储期",
+          "exit_standard": "展开宏后再计算，识别括号和重复求值风险；不背编译器特定字节数。"
+        },
+        {
+          "id": "files",
+          "title": "文件操作",
+          "prerequisites": [
+            "strings",
+            "pointers",
+            "structs"
+          ],
+          "weight": 3,
+          "concepts": "FILE、打开关闭、顺序读写、EOF",
+          "exit_standard": "逐次判断读取函数返回值；处理打开失败，解释文本文件与二进制文件差别。"
+        },
+        {
+          "id": "algorithms",
+          "title": "综合算法与纸笔编程",
+          "prerequisites": [
+            "loop",
+            "arrays",
+            "functions",
+            "pointers"
+          ],
+          "weight": 5,
+          "concepts": "算法分解、复杂度直觉、综合程序与边界测试",
+          "exit_standard": "限时完成需求分析、伪代码、C实现、手工跟踪及测试表。"
+        }
+      ],
+      "training_note": "章节顺序、掌握门槛、复习间隔和模拟分值分配是本软件的教学设计，不是官方细分考点或分值承诺。",
+      "mock_templates": {
+        "c": {
+          "minutes": 90,
+          "points": 150,
+          "sections": [
+            {
+              "kind": "fill",
+              "count": 4,
+              "points": 5,
+              "modules": [
+                "types",
+                "branch",
+                "preproc",
+                "files"
+              ]
+            },
+            {
+              "kind": "trace",
+              "count": 4,
+              "points": 5,
+              "modules": [
+                "loop",
+                "arrays",
+                "functions",
+                "pointers"
+              ]
+            },
+            {
+              "kind": "debug",
+              "count": 3,
+              "points": 10,
+              "modules": [
+                "strings",
+                "structs",
+                "io"
+              ]
+            },
+            {
+              "kind": "complete",
+              "count": 2,
+              "points": 10,
+              "modules": [
+                "algorithms",
+                "functions"
+              ]
+            },
+            {
+              "kind": "program",
+              "count": 2,
+              "points": 30,
+              "modules": [
+                "arrays",
+                "pointers",
+                "algorithms",
+                "functions",
+                "strings",
+                "structs",
+                "loop"
+              ]
+            }
+          ]
+        },
+        "english": {
+          "minutes": 120,
+          "points": 100,
+          "sections": [
+            {
+              "kind": "fill",
+              "count": 10,
+              "points": 2
+            },
+            {
+              "kind": "reading",
+              "count": 5,
+              "points": 4
+            },
+            {
+              "kind": "translation",
+              "count": 3,
+              "points": 10
+            },
+            {
+              "kind": "writing",
+              "count": 1,
+              "points": 30
+            }
+          ]
+        }
+      },
+      "release_status": "单用户本地试用版；当前仅核验此院校专业包，尚非全国覆盖产品",
+      "question_pools": {
+        "c": [
+          "c-foundations-v1"
+        ],
+        "english": [
+          "hubei-english-v1"
+        ]
+      },
+      "planner_id": "c-english-v1",
+      "registration_steps": [
+        {
+          "id": "eligibility",
+          "title": "核对学籍、应届毕业资格与对口专业"
+        },
+        {
+          "id": "application",
+          "title": "省报名平台选择一校一个本科专业"
+        },
+        {
+          "id": "review",
+          "title": "查询院校志愿审核结果"
+        },
+        {
+          "id": "materials",
+          "title": "按院校要求提交材料与缴费"
+        },
+        {
+          "id": "admission-card",
+          "title": "打印准考证并核对考场"
+        },
+        {
+          "id": "exam-result",
+          "title": "参加闭卷笔试，查询成绩与录取"
+        }
+      ]
+    }
+  ]
+}

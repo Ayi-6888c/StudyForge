@@ -1,0 +1,4921 @@
+{
+  "schema_version": 1,
+  "version": "2026.10.22-v3",
+  "questions": [
+    {
+      "id": "C-io-F1",
+      "family_id": "C-io-F1",
+      "subject": "c",
+      "module": "io",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "使用 printf/scanf 的标准头文件名是什么？只填文件名。",
+      "code": "",
+      "answer": "stdio.h",
+      "accepted": [
+        "stdio.h"
+      ],
+      "explanation": "声明标准输入输出函数。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-F2",
+      "family_id": "C-io-F2",
+      "subject": "c",
+      "module": "io",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "scanf(\"%d\", ____); 将整数读入变量 x，空白处填什么？",
+      "code": "",
+      "answer": "&x",
+      "accepted": [
+        "&x"
+      ],
+      "explanation": "scanf 需要变量地址。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-F1",
+      "family_id": "C-types-F1",
+      "subject": "c",
+      "module": "types",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "int a=7,b=2; 表达式 a/b 的值是多少？",
+      "code": "",
+      "answer": "3",
+      "accepted": [
+        "3"
+      ],
+      "explanation": "两个操作数均为 int，整数除法截去小数部分。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-F2",
+      "family_id": "C-types-F2",
+      "subject": "c",
+      "module": "types",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "逻辑表达式 0 || 5 的值是多少？",
+      "code": "",
+      "answer": "1",
+      "accepted": [
+        "1"
+      ],
+      "explanation": "C 的逻辑运算结果为 int 类型的 0 或 1。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-F1",
+      "family_id": "C-branch-F1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "switch 的 case 语句通常用哪个关键字防止继续执行后续分支？",
+      "code": "",
+      "answer": "break",
+      "accepted": [
+        "break"
+      ],
+      "explanation": "break 退出最近的 switch 或循环。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-F2",
+      "family_id": "C-branch-F2",
+      "subject": "c",
+      "module": "branch",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "int x=0; if(x=5) x++; 执行后 x 的值是多少？",
+      "code": "",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "赋值表达式值为5，条件为真；并不是比较。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-F1",
+      "family_id": "C-loop-F1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "for(i=0;i<5;i++) 循环正常结束后 i 等于多少？",
+      "code": "",
+      "answer": "5",
+      "accepted": [
+        "5"
+      ],
+      "explanation": "第五次循环后 i 增至5，条件不成立。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-F2",
+      "family_id": "C-loop-F2",
+      "subject": "c",
+      "module": "loop",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "while 循环中结束当前轮而进入下一次条件判断的关键字是什么？",
+      "code": "",
+      "answer": "continue",
+      "accepted": [
+        "continue"
+      ],
+      "explanation": "continue 不等于退出整个循环。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-F1",
+      "family_id": "C-arrays-F1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "int a[8]; 数组最后一个元素的合法下标是多少？",
+      "code": "",
+      "answer": "7",
+      "accepted": [
+        "7"
+      ],
+      "explanation": "下标从0开始。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-F2",
+      "family_id": "C-arrays-F2",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "int a[2][3]; 共包含多少个 int 元素？",
+      "code": "",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "二维数组是含2行、每行3个元素的数组。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-F1",
+      "family_id": "C-strings-F1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "char s[]=\"abc\"; sizeof(s) 的值是多少？",
+      "code": "",
+      "answer": "4",
+      "accepted": [
+        "4"
+      ],
+      "explanation": "包含结尾空字符。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-F2",
+      "family_id": "C-strings-F2",
+      "subject": "c",
+      "module": "strings",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "strlen(\"a\\0bc\") 的返回值是多少？",
+      "code": "",
+      "answer": "1",
+      "accepted": [
+        "1"
+      ],
+      "explanation": "strlen 在第一个空字符处结束。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-F1",
+      "family_id": "C-functions-F1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "函数没有返回值时，其返回类型关键字是什么？",
+      "code": "",
+      "answer": "void",
+      "accepted": [
+        "void"
+      ],
+      "explanation": "void 表示不返回一个值。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-F2",
+      "family_id": "C-functions-F2",
+      "subject": "c",
+      "module": "functions",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "C函数的普通形参通过哪种参数传递方式获得实参值？",
+      "code": "",
+      "answer": "值传递",
+      "accepted": [
+        "值传递",
+        "传值",
+        "按值传递"
+      ],
+      "explanation": "指针参数传递的也仍然是地址值的副本。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-F1",
+      "family_id": "C-pointers-F1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "int x=4; int *p=&x; 表达式 *p 的值是多少？",
+      "code": "",
+      "answer": "4",
+      "accepted": [
+        "4"
+      ],
+      "explanation": "解引用读取 p 所指向的对象。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-F2",
+      "family_id": "C-pointers-F2",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "int a[5]; int *p=a; p+2 指向数组哪个下标？只填下标。",
+      "code": "",
+      "answer": "2",
+      "accepted": [
+        "2"
+      ],
+      "explanation": "按所指元素的大小移动。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-F1",
+      "family_id": "C-structs-F1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "结构体指针 p 访问成员 score 可写作 p____score，填运算符。",
+      "code": "",
+      "answer": "->",
+      "accepted": [
+        "->"
+      ],
+      "explanation": "箭头运算符等价于 (*p).score。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-F2",
+      "family_id": "C-structs-F2",
+      "subject": "c",
+      "module": "structs",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "typedef int Score; Score x=7; x 的实际类型是什么？",
+      "code": "",
+      "answer": "int",
+      "accepted": [
+        "int"
+      ],
+      "explanation": "typedef 是类型别名，不创建独立的新基本类型。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-F1",
+      "family_id": "C-preproc-F1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "宏替换发生在编译处理流程的哪个阶段？",
+      "code": "",
+      "answer": "预处理",
+      "accepted": [
+        "预处理",
+        "预处理阶段"
+      ],
+      "explanation": "预处理器先处理宏、头文件包含和条件编译，再进入后续编译过程。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-F2",
+      "family_id": "C-preproc-F2",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "条件编译 #ifdef 的配对结束指令是什么？",
+      "code": "",
+      "answer": "#endif",
+      "accepted": [
+        "#endif",
+        "endif"
+      ],
+      "explanation": "条件编译块以 #endif 结束。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-F1",
+      "family_id": "C-files-F1",
+      "subject": "c",
+      "module": "files",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "以只读文本方式打开文件，fopen 的模式字符串内容是什么？不填引号。",
+      "code": "",
+      "answer": "r",
+      "accepted": [
+        "r"
+      ],
+      "explanation": "r 要求文件存在。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-F2",
+      "family_id": "C-files-F2",
+      "subject": "c",
+      "module": "files",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "fgetc 的返回值应保存在 char 还是 int 中，才能可靠区分 EOF？",
+      "code": "",
+      "answer": "int",
+      "accepted": [
+        "int"
+      ],
+      "explanation": "需要容纳所有 unsigned char 值与 EOF。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-F1",
+      "family_id": "C-algorithms-F1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "对已升序排列的数组使用二分查找，所需比较次数的数量级是什么？写 O(...)。",
+      "code": "",
+      "answer": "O(logn)",
+      "accepted": [
+        "O(logn)",
+        "O(log2n)",
+        "O(log(n))"
+      ],
+      "explanation": "每次把候选区间大约减半。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-F2",
+      "family_id": "C-algorithms-F2",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "设 n=5，双层循环外层 n 次、内层也固定 n 次，总共执行内层语句多少次？",
+      "code": "",
+      "answer": "25",
+      "accepted": [
+        "25"
+      ],
+      "explanation": "两层次数相乘。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-T1",
+      "family_id": "C-io-T1",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a=17,b=5; printf(\"%d %d\",a/b,a%b);",
+      "answer": "3 2",
+      "accepted": [
+        "3 2"
+      ],
+      "explanation": "17=3×5+2。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-T2",
+      "family_id": "C-io-T2",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=2; x=x+3; printf(\"%d\",x*x);",
+      "answer": "25",
+      "accepted": [
+        "25"
+      ],
+      "explanation": "赋值后 x=5。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-T3",
+      "family_id": "C-io-T3",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "double x=7.0/2; printf(\"%.1f\",x);",
+      "answer": "3.5",
+      "accepted": [
+        "3.5"
+      ],
+      "explanation": "实数除法保留小数。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-T1",
+      "family_id": "C-types-T1",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=3; printf(\"%d\",2+x*4);",
+      "answer": "14",
+      "accepted": [
+        "14"
+      ],
+      "explanation": "乘法优先于加法。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-T2",
+      "family_id": "C-types-T2",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=2,y=0; int z=(y && ++x); printf(\"%d %d\",x,z);",
+      "answer": "2 0",
+      "accepted": [
+        "2 0"
+      ],
+      "explanation": "&& 左侧为0，右侧不求值。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-T3",
+      "family_id": "C-types-T3",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=7; double y=(double)x/2; printf(\"%.1f\",y);",
+      "answer": "3.5",
+      "accepted": [
+        "3.5"
+      ],
+      "explanation": "先转换再除法。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-T1",
+      "family_id": "C-branch-T1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=8,y=0; if(x<5)y=1; else if(x<10)y=2; else y=3; printf(\"%d\",y);",
+      "answer": "2",
+      "accepted": [
+        "2"
+      ],
+      "explanation": "命中第二个分支。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-T2",
+      "family_id": "C-branch-T2",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=2,y=0; switch(x){case 1:y+=1;case 2:y+=2;case 3:y+=3;break;default:y=9;} printf(\"%d\",y);",
+      "answer": "5",
+      "accepted": [
+        "5"
+      ],
+      "explanation": "从 case2 穿透到 case3。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-T3",
+      "family_id": "C-branch-T3",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=0,y=1; if(x) if(y)y=2; else y=3; printf(\"%d\",y);",
+      "answer": "1",
+      "accepted": [
+        "1"
+      ],
+      "explanation": "else 属于最近的 if，但外层条件为假。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-T1",
+      "family_id": "C-loop-T1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int i,s=0; for(i=1;i<=4;i++)s+=i; printf(\"%d %d\",s,i);",
+      "answer": "10 5",
+      "accepted": [
+        "10 5"
+      ],
+      "explanation": "依次加1、2、3、4。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-T2",
+      "family_id": "C-loop-T2",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int i,s=0; for(i=1;i<=5;i++){if(i==3)continue;s+=i;} printf(\"%d\",s);",
+      "answer": "12",
+      "accepted": [
+        "12"
+      ],
+      "explanation": "跳过3，其他项相加。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-T3",
+      "family_id": "C-loop-T3",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=0; do{x++;}while(x<0); printf(\"%d\",x);",
+      "answer": "1",
+      "accepted": [
+        "1"
+      ],
+      "explanation": "do-while 至少执行一次。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-T1",
+      "family_id": "C-arrays-T1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a[4]={1,2}; printf(\"%d %d\",a[1],a[3]);",
+      "answer": "2 0",
+      "accepted": [
+        "2 0"
+      ],
+      "explanation": "其余元素自动初始化为0。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-T2",
+      "family_id": "C-arrays-T2",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a[3]={3,1,2},i,t; for(i=0;i<2;i++){if(a[i]>a[i+1]){t=a[i];a[i]=a[i+1];a[i+1]=t;}} printf(\"%d %d %d\",a[0],a[1],a[2]);",
+      "answer": "1 2 3",
+      "accepted": [
+        "1 2 3"
+      ],
+      "explanation": "这是一趟从左到右的相邻交换。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-T3",
+      "family_id": "C-arrays-T3",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a[2][2]={{1,2},{3,4}}; printf(\"%d\",a[0][1]+a[1][0]);",
+      "answer": "5",
+      "accepted": [
+        "5"
+      ],
+      "explanation": "对应2与3。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-T1",
+      "family_id": "C-strings-T1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "char s[]=\"cat\"; s[1]='u'; printf(\"%s\",s);",
+      "answer": "cut",
+      "accepted": [
+        "cut"
+      ],
+      "explanation": "修改第二个字符。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-T2",
+      "family_id": "C-strings-T2",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "char s[]=\"abc\"; printf(\"%d\",(int)strlen(s));",
+      "answer": "3",
+      "accepted": [
+        "3"
+      ],
+      "explanation": "长度不含终止符；本题已包含 string.h。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-T3",
+      "family_id": "C-strings-T3",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "char s[]=\"hello\"; s[2]='\\0'; printf(\"%s\",s);",
+      "answer": "he",
+      "accepted": [
+        "he"
+      ],
+      "explanation": "输出在空字符处停止。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-T1",
+      "family_id": "C-functions-T1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int f(int x){x+=2;return x;} int main(void){int a=3;int b=f(a);printf(\"%d %d\",a,b);return 0;}",
+      "answer": "3 5",
+      "accepted": [
+        "3 5"
+      ],
+      "explanation": "形参改变不影响实参。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-T2",
+      "family_id": "C-functions-T2",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int f(int n){if(n<=1)return 1;return n*f(n-1);} int main(void){printf(\"%d\",f(4));return 0;}",
+      "answer": "24",
+      "accepted": [
+        "24"
+      ],
+      "explanation": "4×3×2×1。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-T3",
+      "family_id": "C-functions-T3",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int f(void){static int x=0;x++;return x;} int main(void){int a=f();int b=f();printf(\"%d %d\",a,b);return 0;}",
+      "answer": "1 2",
+      "accepted": [
+        "1 2"
+      ],
+      "explanation": "static 局部变量保留值；调用先后由两条语句确定。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-T1",
+      "family_id": "C-pointers-T1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a=3,*p=&a; *p=8; printf(\"%d\",a);",
+      "answer": "8",
+      "accepted": [
+        "8"
+      ],
+      "explanation": "通过指针修改同一个对象。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-T2",
+      "family_id": "C-pointers-T2",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a[3]={2,4,6}; int *p=a; p++; printf(\"%d\",*p);",
+      "answer": "4",
+      "accepted": [
+        "4"
+      ],
+      "explanation": "指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-T3",
+      "family_id": "C-pointers-T3",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a[3]={1,3,5}; int *p=&a[2]; printf(\"%d\",(int)(p-a));",
+      "answer": "2",
+      "accepted": [
+        "2"
+      ],
+      "explanation": "同一数组内指针差为元素个数。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-T1",
+      "family_id": "C-structs-T1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "struct S{int x;}; struct S a={3},b=a; b.x=7; printf(\"%d %d\",a.x,b.x);",
+      "answer": "3 7",
+      "accepted": [
+        "3 7"
+      ],
+      "explanation": "结构体赋值复制成员值。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-T2",
+      "family_id": "C-structs-T2",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "struct S{int x;}; struct S a={2}; struct S *p=&a; p->x+=4; printf(\"%d\",a.x);",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "指针访问并修改原结构体。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-T3",
+      "family_id": "C-structs-T3",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "enum E{A=2,B,C=7,D}; printf(\"%d %d\",B,D);",
+      "answer": "3 8",
+      "accepted": [
+        "3 8"
+      ],
+      "explanation": "未显式指定的枚举值在前项上加1。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-T1",
+      "family_id": "C-preproc-T1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "#define S(x) x*x\nint main(void){printf(\"%d\",S(2+1));return 0;}",
+      "answer": "5",
+      "accepted": [
+        "5"
+      ],
+      "explanation": "展开为2+1*2+1，而非(2+1)*(2+1)。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-T2",
+      "family_id": "C-preproc-T2",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "#define N 4\nint main(void){printf(\"%d\",N+1);return 0;}",
+      "answer": "5",
+      "accepted": [
+        "5"
+      ],
+      "explanation": "宏按替换文本展开。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-T3",
+      "family_id": "C-preproc-T3",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int x=2; {int x=5; printf(\"%d \",x);} printf(\"%d\",x);",
+      "answer": "5 2",
+      "accepted": [
+        "5 2"
+      ],
+      "explanation": "内层变量遮蔽但不改写外层变量。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-T1",
+      "family_id": "C-files-T1",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。本题给定文件操作条件，不考虑失败。",
+      "code": "文件已成功打开且内容为 ABC，指针位于开头：int a=fgetc(fp); int b=fgetc(fp); printf(\"%c%c\",a,b);",
+      "answer": "AB",
+      "accepted": [
+        "AB"
+      ],
+      "explanation": "每次读取后文件位置前进一个字符。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-T2",
+      "family_id": "C-files-T2",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。本题给定文件操作条件，不考虑失败。",
+      "code": "成功以 w 模式打开原来含 ABC 的文本文件，并执行 fclose(fp)，没有写入。文件最终有几个字符？",
+      "answer": "0",
+      "accepted": [
+        "0"
+      ],
+      "explanation": "w 会截断原有内容。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-T3",
+      "family_id": "C-files-T3",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。本题给定文件操作条件，不考虑失败。",
+      "code": "成功打开内容为 12 34 的文本文件：int a,b; fscanf(fp,\"%d%d\",&a,&b); printf(\"%d\",a+b);",
+      "answer": "46",
+      "accepted": [
+        "46"
+      ],
+      "explanation": "格式读取会跳过数字前空白。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-T1",
+      "family_id": "C-algorithms-T1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a=18,b=12,r; while(b){r=a%b;a=b;b=r;} printf(\"%d\",a);",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "辗转相除法。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-T2",
+      "family_id": "C-algorithms-T2",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int n=120,s=0; while(n){s+=n%10;n/=10;} printf(\"%d\",s);",
+      "answer": "3",
+      "accepted": [
+        "3"
+      ],
+      "explanation": "依次取0、2、1。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-T3",
+      "family_id": "C-algorithms-T3",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 2,
+      "prompt": "写出结果。代码片段位于合法程序中，已包含所需头文件；逐步跟踪，不先运行。",
+      "code": "int a[5]={2,4,6,8,10};int l=0,r=4,k=8,mid;while(l<=r){mid=(l+r)/2;if(a[mid]==k)break;if(a[mid]<k)l=mid+1;else r=mid-1;}printf(\"%d\",mid);",
+      "answer": "3",
+      "accepted": [
+        "3"
+      ],
+      "explanation": "第一次mid2，随后mid3命中。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-D1",
+      "family_id": "C-io-D1",
+      "subject": "c",
+      "module": "io",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "int x; scanf(\"%d\",x);",
+      "answer": "scanf(\"%d\", &x);",
+      "accepted": null,
+      "explanation": "第二个参数须为 x 的地址；遗漏 & 会导致错误访问。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-D1",
+      "family_id": "C-types-D1",
+      "subject": "c",
+      "module": "types",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "int a=7,b=2; double x=a/b; /*希望 x 为3.5*/",
+      "answer": "double x=(double)a/b;",
+      "accepted": null,
+      "explanation": "先转实数再相除；相除以后才转实数已丢失小数。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-D1",
+      "family_id": "C-branch-D1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "if(0 < x < 10) puts(\"in\");",
+      "answer": "if (x > 0 && x < 10) puts(\"in\");",
+      "accepted": null,
+      "explanation": "C 先算0<x得到0或1，再与10比较；不等于数学连写。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-D1",
+      "family_id": "C-loop-D1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "int i,s=0; for(i=1;i<=5;i++); s+=i;",
+      "answer": "删除 for 后的分号，将 s+=i 置于循环体内。",
+      "accepted": null,
+      "explanation": "多余分号形成空循环，累加只在循环后执行一次。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-D1",
+      "family_id": "C-arrays-D1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "int a[5],i; for(i=0;i<=5;i++) a[i]=0;",
+      "answer": "for(i=0;i<5;i++) a[i]=0;",
+      "accepted": null,
+      "explanation": "a[5] 越界；有效下标0至4。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-D1",
+      "family_id": "C-strings-D1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "char s[3]=\"cat\"; printf(\"%s\",s);",
+      "answer": "char s[4]=\"cat\"; 或 char s[]=\"cat\";",
+      "accepted": null,
+      "explanation": "容量3不含终止符空间，作为字符串输出会越界读取。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-D1",
+      "family_id": "C-functions-D1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "int fact(int n){return n*fact(n-1);} /*n为非负整数*/",
+      "answer": "if(n<=1) return 1; return n*fact(n-1);",
+      "accepted": null,
+      "explanation": "缺少递归终止条件；还应说明非负输入约束。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-D1",
+      "family_id": "C-pointers-D1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "int *p; *p=5;",
+      "answer": "int x; int *p=&x; *p=5;",
+      "accepted": null,
+      "explanation": "未初始化的指针不指向可合法写入的对象。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-D1",
+      "family_id": "C-structs-D1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "struct S{int x;}; struct S a; struct S *p=&a; p.x=3;",
+      "answer": "p->x=3; 或 (*p).x=3;",
+      "accepted": null,
+      "explanation": "p 是指针，不是结构体对象。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-D1",
+      "family_id": "C-preproc-D1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "#define SQR(x) x*x\nint y=SQR(1+2);",
+      "answer": "把宏改为 #define SQR(x) ((x)*(x))；仍不传入带副作用的实参。",
+      "accepted": null,
+      "explanation": "形参和整体均加括号；重复求值风险仍需单独处理。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-D1",
+      "family_id": "C-files-D1",
+      "subject": "c",
+      "module": "files",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "while(!feof(fp)){ch=fgetc(fp);putchar(ch);} /*ch为int*/",
+      "answer": "while((ch=fgetc(fp))!=EOF) putchar(ch);",
+      "accepted": null,
+      "explanation": "feof 只在读取失败后才置位，须检测实际读取结果。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-D1",
+      "family_id": "C-algorithms-D1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "debug",
+      "difficulty": 2,
+      "prompt": "指出问题并给出修正。除修正语句外，还需解释原因。",
+      "code": "/*升序数组二分查找*/ if(a[mid]<key) left=mid; else right=mid;",
+      "answer": "left=mid+1; 或 right=mid-1；相等时返回，循环条件 left<=right。",
+      "accepted": null,
+      "explanation": "不排除 mid 会使区间不收缩，可能死循环。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-K1",
+      "family_id": "C-io-K1",
+      "subject": "c",
+      "module": "io",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "int a,b; scanf(\"%d%d\", &a, &b); printf(\"%d\", ____); /*输出两数之和*/",
+      "answer": "a+b",
+      "accepted": null,
+      "explanation": "用表达式求和。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-K1",
+      "family_id": "C-types-K1",
+      "subject": "c",
+      "module": "types",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "double x = ____ / 2; /*变量a为int，要求实数除法*/",
+      "answer": "(double)a",
+      "accepted": null,
+      "explanation": "除法前转换，不是对除法结果转换。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-K1",
+      "family_id": "C-branch-K1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "if(year%400==0 || (____)) puts(\"leap\");",
+      "answer": "year%4==0 && year%100!=0",
+      "accepted": null,
+      "explanation": "闰年需同时考虑整百年规则。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-K1",
+      "family_id": "C-loop-K1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "int i,s=0; for(i=1;____;i++) s+=i; /*求1至n，n>=1*/",
+      "answer": "i<=n",
+      "accepted": null,
+      "explanation": "上界包含 n。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-K1",
+      "family_id": "C-arrays-K1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "int mx=a[0]; for(i=1;i<n;i++) if(____) mx=a[i];",
+      "answer": "a[i]>mx",
+      "accepted": null,
+      "explanation": "维护已遍历区间的最大值。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-K1",
+      "family_id": "C-strings-K1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "int i=0; while(s[i]!=____) i++; /*求字符串长度*/",
+      "answer": "'\\0'",
+      "accepted": null,
+      "explanation": "以空字符结束，不以空格结束。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-K1",
+      "family_id": "C-functions-K1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "int gcd(int a,int b){return b==0?a:gcd(b,____);}",
+      "answer": "a%b",
+      "accepted": null,
+      "explanation": "递归形式的辗转相除法。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-K1",
+      "family_id": "C-pointers-K1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "void swap(int *a,int *b){int t=*a;*a=*b;____=t;}",
+      "answer": "*b",
+      "accepted": null,
+      "explanation": "写入 b 所指对象。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-K1",
+      "family_id": "C-structs-K1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "struct S{int score;}; struct S *p; /*p已指向合法对象*/ printf(\"%d\",____);",
+      "answer": "p->score",
+      "accepted": null,
+      "explanation": "或 (*p).score。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-K1",
+      "family_id": "C-preproc-K1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "#ifndef LIMIT\n#define LIMIT 10\n____",
+      "answer": "#endif",
+      "accepted": null,
+      "explanation": "关闭条件编译块。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-K1",
+      "family_id": "C-files-K1",
+      "subject": "c",
+      "module": "files",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "int x; while(fscanf(fp,\"%d\",&x)==____) sum+=x;",
+      "answer": "1",
+      "accepted": null,
+      "explanation": "成功转换并赋值的项数为1。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-K1",
+      "family_id": "C-algorithms-K1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "complete",
+      "difficulty": 2,
+      "prompt": "补全空白并解释为何这样填写。等价解法可对照参考自行复核。",
+      "code": "/*冒泡排序每趟把最大值移到右边*/ for(i=0;i<n-1;i++) for(j=0;____;j++) if(a[j]>a[j+1]) swap(&a[j],&a[j+1]);",
+      "answer": "j<n-1-i",
+      "accepted": null,
+      "explanation": "j+1 不能越界，每趟确定一个尾部位置。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-P1",
+      "family_id": "C-io-P1",
+      "subject": "c",
+      "module": "io",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "两数求和：读入两个绝对值不超过10000的整数，输出它们的和。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int a,b; scanf(\"%d%d\",&a,&b); printf(\"%d\\n\",a+b);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "2 3",
+          "expected": "5"
+        },
+        {
+          "input": "-2 2",
+          "expected": "0"
+        },
+        {
+          "input": "0 0",
+          "expected": "0"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-P2",
+      "family_id": "C-io-P2",
+      "subject": "c",
+      "module": "io",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "矩形面积：读入两个正实数长和宽（均不超过100），输出面积，保留2位小数。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){double a,b; scanf(\"%lf%lf\",&a,&b); printf(\"%.2f\\n\",a*b);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "2 3",
+          "expected": "6.00"
+        },
+        {
+          "input": "1.5 2",
+          "expected": "3.00"
+        },
+        {
+          "input": "0.1 0.2",
+          "expected": "0.02"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-P3",
+      "family_id": "C-io-P3",
+      "subject": "c",
+      "module": "io",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "三位数拆分：读入100至999的正整数，按百位、十位、个位顺序以空格分隔输出。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n;scanf(\"%d\",&n);printf(\"%d %d %d\\n\",n/100,n/10%10,n%10);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "123",
+          "expected": "1 2 3"
+        },
+        {
+          "input": "100",
+          "expected": "1 0 0"
+        },
+        {
+          "input": "999",
+          "expected": "9 9 9"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-P1",
+      "family_id": "C-types-P1",
+      "subject": "c",
+      "module": "types",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "平均数：读入三个0至100的整数，输出平均值，保留2位小数。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int a,b,c;scanf(\"%d%d%d\",&a,&b,&c);printf(\"%.2f\\n\",(a+b+c)/3.0);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "1 2 2",
+          "expected": "1.67"
+        },
+        {
+          "input": "0 0 0",
+          "expected": "0.00"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-P2",
+      "family_id": "C-types-P2",
+      "subject": "c",
+      "module": "types",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "秒数转换：输入0至86400的秒数，输出小时、分钟、秒，以空格分隔。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n;scanf(\"%d\",&n);printf(\"%d %d %d\",n/3600,n/60%60,n%60);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "3661",
+          "expected": "1 1 1"
+        },
+        {
+          "input": "0",
+          "expected": "0 0 0"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-P3",
+      "family_id": "C-types-P3",
+      "subject": "c",
+      "module": "types",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "摄氏转换：输入摄氏温度c（-100至100），输出华氏温度c*9/5+32，保留1位小数。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){double c;scanf(\"%lf\",&c);printf(\"%.1f\",c*9/5+32);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "0",
+          "expected": "32.0"
+        },
+        {
+          "input": "-40",
+          "expected": "-40.0"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-P1",
+      "family_id": "C-branch-P1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "最大值：输入三个整数（绝对值不超过10000），输出最大值，允许相等。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int a,b,c,m;scanf(\"%d%d%d\",&a,&b,&c);m=a;if(b>m)m=b;if(c>m)m=c;printf(\"%d\",m);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "2 5 3",
+          "expected": "5"
+        },
+        {
+          "input": "4 4 4",
+          "expected": "4"
+        },
+        {
+          "input": "-3 -1 -2",
+          "expected": "-1"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-P2",
+      "family_id": "C-branch-P2",
+      "subject": "c",
+      "module": "branch",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "闰年：输入1至9999的年份，闰年输出YES，否则输出NO。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int y;scanf(\"%d\",&y);puts(y%400==0||(y%4==0&&y%100!=0)?\"YES\":\"NO\");return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "2000",
+          "expected": "YES"
+        },
+        {
+          "input": "1900",
+          "expected": "NO"
+        },
+        {
+          "input": "2024",
+          "expected": "YES"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-P3",
+      "family_id": "C-branch-P3",
+      "subject": "c",
+      "module": "branch",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "成绩等级：输入0至100整数成绩；90及以上A，80至89 B，60至79 C，其他D。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int s;scanf(\"%d\",&s);puts(s>=90?\"A\":s>=80?\"B\":s>=60?\"C\":\"D\");return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "90",
+          "expected": "A"
+        },
+        {
+          "input": "80",
+          "expected": "B"
+        },
+        {
+          "input": "59",
+          "expected": "D"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-P1",
+      "family_id": "C-loop-P1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "整数求和：输入1至1000整数n，使用循环输出1+2+...+n。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,i,s=0;scanf(\"%d\",&n);for(i=1;i<=n;i++)s+=i;printf(\"%d\",s);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "1",
+          "expected": "1"
+        },
+        {
+          "input": "100",
+          "expected": "5050"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-P2",
+      "family_id": "C-loop-P2",
+      "subject": "c",
+      "module": "loop",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "素数判断：输入2至100000整数n，是素数输出YES，否则NO。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,i,ok=1;scanf(\"%d\",&n);for(i=2;i<=n/i;i++)if(n%i==0){ok=0;break;}puts(ok?\"YES\":\"NO\");return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "2",
+          "expected": "YES"
+        },
+        {
+          "input": "49",
+          "expected": "NO"
+        },
+        {
+          "input": "97",
+          "expected": "YES"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-P3",
+      "family_id": "C-loop-P3",
+      "subject": "c",
+      "module": "loop",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "数位和：输入0至1000000000整数，输出十进制各位数字之和。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,s=0;scanf(\"%d\",&n);do{s+=n%10;n/=10;}while(n);printf(\"%d\",s);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "1203",
+          "expected": "6"
+        },
+        {
+          "input": "0",
+          "expected": "0"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-P1",
+      "family_id": "C-arrays-P1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "逆序输出：输入n（1至100）及n个整数，逆序输出，以单个空格分隔，无末尾空格。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,a[100],i;scanf(\"%d\",&n);for(i=0;i<n;i++)scanf(\"%d\",&a[i]);for(i=n-1;i>=0;i--)printf(\"%d%s\",a[i],i?\" \":\"\");return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "3 1 2 3",
+          "expected": "3 2 1"
+        },
+        {
+          "input": "1 7",
+          "expected": "7"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-P2",
+      "family_id": "C-arrays-P2",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "升序排序：输入n（1至100）及n个整数，升序输出，以单个空格分隔。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,a[100],i,j,t;scanf(\"%d\",&n);for(i=0;i<n;i++)scanf(\"%d\",&a[i]);for(i=0;i<n-1;i++)for(j=0;j<n-1-i;j++)if(a[j]>a[j+1]){t=a[j];a[j]=a[j+1];a[j+1]=t;}for(i=0;i<n;i++)printf(\"%s%d\",i?\" \":\"\",a[i]);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "4 3 1 2 1",
+          "expected": "1 1 2 3"
+        },
+        {
+          "input": "1 0",
+          "expected": "0"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-P3",
+      "family_id": "C-arrays-P3",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "矩阵主对角线：输入3×3整数矩阵，输出主对角线之和。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int x,i,j,s=0;for(i=0;i<3;i++)for(j=0;j<3;j++){scanf(\"%d\",&x);if(i==j)s+=x;}printf(\"%d\",s);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "1 2 3 4 5 6 7 8 9",
+          "expected": "15"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-P1",
+      "family_id": "C-strings-P1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "统计数字：输入一行不超过100字符的文本，输出其中数字字符个数。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){char s[102];int i,n=0;fgets(s,sizeof s,stdin);for(i=0;s[i];i++)if(s[i]>='0'&&s[i]<='9')n++;printf(\"%d\",n);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "ab12 3\n",
+          "expected": "3"
+        },
+        {
+          "input": "abc\n",
+          "expected": "0"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-P2",
+      "family_id": "C-strings-P2",
+      "subject": "c",
+      "module": "strings",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "回文串：输入长度1至100、不含空格的字符串，回文输出YES，否则NO。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){char s[101];int i,n,ok=1;scanf(\"%100s\",s);n=(int)strlen(s);for(i=0;i<n/2;i++)if(s[i]!=s[n-1-i])ok=0;puts(ok?\"YES\":\"NO\");return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "abba",
+          "expected": "YES"
+        },
+        {
+          "input": "abca",
+          "expected": "NO"
+        },
+        {
+          "input": "x",
+          "expected": "YES"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-P3",
+      "family_id": "C-strings-P3",
+      "subject": "c",
+      "module": "strings",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "字符串复制：不使用strcpy，输入长度1至100的无空格字符串，手动复制到另一数组并输出。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){char a[101],b[101];int i;scanf(\"%100s\",a);for(i=0;a[i];i++)b[i]=a[i];b[i]='\\0';puts(b);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "cat",
+          "expected": "cat"
+        },
+        {
+          "input": "x",
+          "expected": "x"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-P1",
+      "family_id": "C-functions-P1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "最大公约数函数：编写 gcd 函数，输入两个1至10000整数，输出最大公约数。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint gcd(int a,int b){return b?gcd(b,a%b):a;}\nint main(void){int a,b;scanf(\"%d%d\",&a,&b);printf(\"%d\",gcd(a,b));return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "18 12",
+          "expected": "6"
+        },
+        {
+          "input": "7 3",
+          "expected": "1"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-P2",
+      "family_id": "C-functions-P2",
+      "subject": "c",
+      "module": "functions",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "递归阶乘：用递归函数计算n!，输入0至10整数，输出结果。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nlong fact(int n){return n<=1?1:n*fact(n-1);}\nint main(void){int n;scanf(\"%d\",&n);printf(\"%ld\",fact(n));return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "0",
+          "expected": "1"
+        },
+        {
+          "input": "5",
+          "expected": "120"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-P3",
+      "family_id": "C-functions-P3",
+      "subject": "c",
+      "module": "functions",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "函数求和：编写接收整数数组和长度的函数，返回元素总和。输入n（1至100）及绝对值不超过100的n个数，输出和。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint sum(int a[],int n){int s=0,i;for(i=0;i<n;i++)s+=a[i];return s;}\nint main(void){int n,a[100],i;scanf(\"%d\",&n);for(i=0;i<n;i++)scanf(\"%d\",&a[i]);printf(\"%d\",sum(a,n));return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "3 1 -2 3",
+          "expected": "2"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-P1",
+      "family_id": "C-pointers-P1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "指针交换：实现void swap(int*,int*)，输入两个整数并交换，以空格分隔输出。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nvoid swap(int*a,int*b){int t=*a;*a=*b;*b=t;}\nint main(void){int a,b;scanf(\"%d%d\",&a,&b);swap(&a,&b);printf(\"%d %d\",a,b);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "1 2",
+          "expected": "2 1"
+        },
+        {
+          "input": "3 3",
+          "expected": "3 3"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-P2",
+      "family_id": "C-pointers-P2",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "指针遍历：输入n（1至100）及n个绝对值不超过100的数，用指针遍历求和。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,a[100],i,s=0,*p;scanf(\"%d\",&n);for(i=0;i<n;i++)scanf(\"%d\",&a[i]);for(p=a;p<a+n;p++)s+=*p;printf(\"%d\",s);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "3 2 3 4",
+          "expected": "9"
+        },
+        {
+          "input": "1 -1",
+          "expected": "-1"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-P3",
+      "family_id": "C-pointers-P3",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "指针返回极值：用void range(int*,int,int*,int*)通过两个指针参数返回最大最小值。输入n（1至100）和n个绝对值不超过1000的整数，输出最小值 最大值。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nvoid range(int*a,int n,int*lo,int*hi){int i;*lo=*hi=a[0];for(i=1;i<n;i++){if(a[i]<*lo)*lo=a[i];if(a[i]>*hi)*hi=a[i];}}\nint main(void){int n,a[100],i,lo,hi;scanf(\"%d\",&n);for(i=0;i<n;i++)scanf(\"%d\",&a[i]);range(a,n,&lo,&hi);printf(\"%d %d\",lo,hi);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "4 3 -1 8 2",
+          "expected": "-1 8"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-P1",
+      "family_id": "C-structs-P1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "最高分记录：使用结构体数组。输入n（1至20），随后n行“姓名 成绩”，姓名无空格至多20字符，成绩0至100；输出首位最高分者姓名。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nstruct S{char name[21];int score;};int main(void){struct S a[20];int n,i,k=0;scanf(\"%d\",&n);for(i=0;i<n;i++){scanf(\"%20s%d\",a[i].name,&a[i].score);if(a[i].score>a[k].score)k=i;}puts(a[k].name);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "3 Li 80 Wu 90 Hu 90",
+          "expected": "Wu"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-P2",
+      "family_id": "C-structs-P2",
+      "subject": "c",
+      "module": "structs",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "结构体求和：定义二维点结构体，输入两个点的整数坐标（绝对值不超过1000），输出它们坐标相加得到的新点x y。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){struct P{int x,y;};struct P a,b;scanf(\"%d%d%d%d\",&a.x,&a.y,&b.x,&b.y);printf(\"%d %d\",a.x+b.x,a.y+b.y);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "1 2 3 4",
+          "expected": "4 6"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-P3",
+      "family_id": "C-structs-P3",
+      "subject": "c",
+      "module": "structs",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "及格人数：用结构体数组存储n名学生的编号和成绩，输入n（1至100）及n组整数，输出成绩>=60的人数。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){struct S{int id,score;};struct S a[100];int n,i,c=0;scanf(\"%d\",&n);for(i=0;i<n;i++){scanf(\"%d%d\",&a[i].id,&a[i].score);if(a[i].score>=60)c++;}printf(\"%d\",c);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "3 1 59 2 60 3 100",
+          "expected": "2"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-P1",
+      "family_id": "C-preproc-P1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "宏表达式：定义不发生重复求值问题的常量宏 PI=3.1415926，输入半径0至100，输出圆面积保留2位。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\n#define PI 3.1415926\nint main(void){double r;scanf(\"%lf\",&r);printf(\"%.2f\",PI*r*r);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "1",
+          "expected": "3.14"
+        },
+        {
+          "input": "0",
+          "expected": "0.00"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-P2",
+      "family_id": "C-preproc-P2",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "作用域改写：把全局可变累加器改写为局部变量：输入n（1至100），输出1至n之和，函数之间只通过参数和返回值传递数据。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint sum(int n){int i,s=0;for(i=1;i<=n;i++)s+=i;return s;}\nint main(void){int n;scanf(\"%d\",&n);printf(\"%d\",sum(n));return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "5",
+          "expected": "15"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-P3",
+      "family_id": "C-preproc-P3",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "存储期解释：写一个计数函数，使用static局部变量，每调用一次返回比上次大1的值。main按顺序调用三次，输出1 2 3。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint next(void){static int n=0;return ++n;}\nint main(void){int a=next(),b=next(),c=next();printf(\"%d %d %d\",a,b,c);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "",
+          "expected": "1 2 3"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-P1",
+      "family_id": "C-files-P1",
+      "subject": "c",
+      "module": "files",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "文本复制：写完整函数把in.txt逐字符复制到out.txt。检查打开失败，所有成功打开的文件都必须关闭。纸笔作答，文件题不以标准输入样例代替文件行为。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "int copy(void){FILE *in=fopen(\"in.txt\",\"r\"),*out;int c;if(!in)return 0;out=fopen(\"out.txt\",\"w\");if(!out){fclose(in);return 0;}while((c=fgetc(in))!=EOF)fputc(c,out);fclose(in);fclose(out);return 1;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-P2",
+      "family_id": "C-files-P2",
+      "subject": "c",
+      "module": "files",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "文件整数求和：设计程序读取data.txt中的整数（绝对值不超过100，共不超过100项）直到读取失败，输出和。描述文件打开失败、空文件及含非整数内容时的行为。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "FILE *f=fopen(\"data.txt\",\"r\");int x,s=0;if(!f)return 1;while(fscanf(f,\"%d\",&x)==1)s+=x;fclose(f);printf(\"%d\",s);",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-P3",
+      "family_id": "C-files-P3",
+      "subject": "c",
+      "module": "files",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "记录保存：编写save函数，把姓名和成绩写入文本文件，每条记录一行。说明为何使用追加模式a或覆盖模式w，并写出你选择的行为。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "参考：以w打开文件，逐条fprintf(fp,\"%s %d\\n\",name,score)，检查打开/写入失败并关闭。选择a时在文末追加，不能宣称覆盖旧记录。",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-P1",
+      "family_id": "C-algorithms-P1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "二分查找：输入n（1至100）、升序且无重复的n个整数以及目标key；输出目标的0基下标，不存在输出-1。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,a[100],i,k,l=0,r,m,ans=-1;scanf(\"%d\",&n);for(i=0;i<n;i++)scanf(\"%d\",&a[i]);scanf(\"%d\",&k);r=n-1;while(l<=r){m=l+(r-l)/2;if(a[m]==k){ans=m;break;}if(a[m]<k)l=m+1;else r=m-1;}printf(\"%d\",ans);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "5 1 3 5 7 9 7",
+          "expected": "3"
+        },
+        {
+          "input": "1 2 3",
+          "expected": "-1"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-P2",
+      "family_id": "C-algorithms-P2",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "program",
+      "difficulty": 2,
+      "prompt": "去重统计：输入n（1至100）及n个0至1000整数，输出不同整数个数；不要求排序输出。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,a[100],i,j,c=0;scanf(\"%d\",&n);for(i=0;i<n;i++){scanf(\"%d\",&a[i]);for(j=0;j<i;j++)if(a[j]==a[i])break;if(j==i)c++;}printf(\"%d\",c);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "5 1 2 1 3 2",
+          "expected": "3"
+        },
+        {
+          "input": "1 7",
+          "expected": "1"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-P3",
+      "family_id": "C-algorithms-P3",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "program",
+      "difficulty": 3,
+      "prompt": "连续最长递增段：输入n（1至100）及n个整数，输出最长严格递增的连续段长度；相等不算递增。\n交付：完整代码（或题目指定的函数）、思路说明、正常/边界/特殊输入测试表。",
+      "code": "",
+      "answer": "#include <stdio.h>\n#include <string.h>\nint main(void){int n,i,x,prev=0,cur=0,best=0;scanf(\"%d\",&n);for(i=0;i<n;i++){scanf(\"%d\",&x);cur=(i>0&&x>prev)?cur+1:1;if(cur>best)best=cur;prev=x;}printf(\"%d\",best);return 0;}",
+      "accepted": null,
+      "explanation": "对照数据范围、循环边界、返回值和输出格式逐项核对。样例通过不等于覆盖全部情况。",
+      "tests": [
+        {
+          "input": "6 1 2 2 3 4 1",
+          "expected": "3"
+        },
+        {
+          "input": "3 2 2 2",
+          "expected": "1"
+        }
+      ],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-V1",
+      "family_id": "C-io-T1",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=13,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "4 1",
+      "accepted": [
+        "4 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-V2",
+      "family_id": "C-io-T1",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=16,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "5 1",
+      "accepted": [
+        "5 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-V3",
+      "family_id": "C-io-T1",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=19,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "6 1",
+      "accepted": [
+        "6 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-V4",
+      "family_id": "C-io-T1",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=22,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "7 1",
+      "accepted": [
+        "7 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-io-V5",
+      "family_id": "C-io-T1",
+      "subject": "c",
+      "module": "io",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=25,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "8 1",
+      "accepted": [
+        "8 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-V1",
+      "family_id": "C-types-T1",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=13,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "4 1",
+      "accepted": [
+        "4 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-V2",
+      "family_id": "C-types-T1",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=16,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "5 1",
+      "accepted": [
+        "5 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-V3",
+      "family_id": "C-types-T1",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=19,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "6 1",
+      "accepted": [
+        "6 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-V4",
+      "family_id": "C-types-T1",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=22,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "7 1",
+      "accepted": [
+        "7 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-types-V5",
+      "family_id": "C-types-T1",
+      "subject": "c",
+      "module": "types",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a=25,b=3; printf(\"%d %d\",a/b,a%b);",
+      "answer": "8 1",
+      "accepted": [
+        "8 1"
+      ],
+      "explanation": "按整数商和余数分别计算。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-V1",
+      "family_id": "C-branch-T1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=4; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "5",
+      "accepted": [
+        "5"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-V2",
+      "family_id": "C-branch-T1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=5; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "4",
+      "accepted": [
+        "4"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-V3",
+      "family_id": "C-branch-T1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=6; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "7",
+      "accepted": [
+        "7"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-V4",
+      "family_id": "C-branch-T1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=7; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-branch-V5",
+      "family_id": "C-branch-T1",
+      "subject": "c",
+      "module": "branch",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=8; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "9",
+      "accepted": [
+        "9"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-V1",
+      "family_id": "C-loop-T1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=4;i++)s+=i; printf(\"%d\",s);",
+      "answer": "10",
+      "accepted": [
+        "10"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-V2",
+      "family_id": "C-loop-T1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=5;i++)s+=i; printf(\"%d\",s);",
+      "answer": "15",
+      "accepted": [
+        "15"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-V3",
+      "family_id": "C-loop-T1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=6;i++)s+=i; printf(\"%d\",s);",
+      "answer": "21",
+      "accepted": [
+        "21"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-V4",
+      "family_id": "C-loop-T1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=7;i++)s+=i; printf(\"%d\",s);",
+      "answer": "28",
+      "accepted": [
+        "28"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-loop-V5",
+      "family_id": "C-loop-T1",
+      "subject": "c",
+      "module": "loop",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=8;i++)s+=i; printf(\"%d\",s);",
+      "answer": "36",
+      "accepted": [
+        "36"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-V1",
+      "family_id": "C-arrays-T1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={4,6,8}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-V2",
+      "family_id": "C-arrays-T1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={5,7,9}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "7",
+      "accepted": [
+        "7"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-V3",
+      "family_id": "C-arrays-T1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={6,8,10}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "8",
+      "accepted": [
+        "8"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-V4",
+      "family_id": "C-arrays-T1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={7,9,11}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "9",
+      "accepted": [
+        "9"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-arrays-V5",
+      "family_id": "C-arrays-T1",
+      "subject": "c",
+      "module": "arrays",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={8,10,12}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "10",
+      "accepted": [
+        "10"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-V1",
+      "family_id": "C-strings-T1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "char s[]=\"study1\"; printf(\"%d\",(int)strlen(s));",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "五个字母加一个数字，终止符不计长度。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-V2",
+      "family_id": "C-strings-T1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "char s[]=\"study2\"; printf(\"%d\",(int)strlen(s));",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "五个字母加一个数字，终止符不计长度。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-V3",
+      "family_id": "C-strings-T1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "char s[]=\"study3\"; printf(\"%d\",(int)strlen(s));",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "五个字母加一个数字，终止符不计长度。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-V4",
+      "family_id": "C-strings-T1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "char s[]=\"study4\"; printf(\"%d\",(int)strlen(s));",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "五个字母加一个数字，终止符不计长度。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-strings-V5",
+      "family_id": "C-strings-T1",
+      "subject": "c",
+      "module": "strings",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "char s[]=\"study5\"; printf(\"%d\",(int)strlen(s));",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "五个字母加一个数字，终止符不计长度。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-V1",
+      "family_id": "C-functions-T1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int f(int x){return x*2;} int main(void){int a=4;printf(\"%d %d\",a,f(a));return 0;}",
+      "answer": "4 8",
+      "accepted": [
+        "4 8"
+      ],
+      "explanation": "实参 a 未被改变。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-V2",
+      "family_id": "C-functions-T1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int f(int x){return x*2;} int main(void){int a=5;printf(\"%d %d\",a,f(a));return 0;}",
+      "answer": "5 10",
+      "accepted": [
+        "5 10"
+      ],
+      "explanation": "实参 a 未被改变。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-V3",
+      "family_id": "C-functions-T1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int f(int x){return x*2;} int main(void){int a=6;printf(\"%d %d\",a,f(a));return 0;}",
+      "answer": "6 12",
+      "accepted": [
+        "6 12"
+      ],
+      "explanation": "实参 a 未被改变。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-V4",
+      "family_id": "C-functions-T1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int f(int x){return x*2;} int main(void){int a=7;printf(\"%d %d\",a,f(a));return 0;}",
+      "answer": "7 14",
+      "accepted": [
+        "7 14"
+      ],
+      "explanation": "实参 a 未被改变。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-functions-V5",
+      "family_id": "C-functions-T1",
+      "subject": "c",
+      "module": "functions",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int f(int x){return x*2;} int main(void){int a=8;printf(\"%d %d\",a,f(a));return 0;}",
+      "answer": "8 16",
+      "accepted": [
+        "8 16"
+      ],
+      "explanation": "实参 a 未被改变。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-V1",
+      "family_id": "C-pointers-T1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={4,6,8}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-V2",
+      "family_id": "C-pointers-T1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={5,7,9}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "7",
+      "accepted": [
+        "7"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-V3",
+      "family_id": "C-pointers-T1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={6,8,10}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "8",
+      "accepted": [
+        "8"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-V4",
+      "family_id": "C-pointers-T1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={7,9,11}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "9",
+      "accepted": [
+        "9"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-pointers-V5",
+      "family_id": "C-pointers-T1",
+      "subject": "c",
+      "module": "pointers",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int a[3]={8,10,12}; int *p=a+1; printf(\"%d\",*p);",
+      "answer": "10",
+      "accepted": [
+        "10"
+      ],
+      "explanation": "a+1 指向第二个元素。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-V1",
+      "family_id": "C-structs-T1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "struct S{int x;};struct S a={4},b=a;b.x++;printf(\"%d %d\",a.x,b.x);",
+      "answer": "4 5",
+      "accepted": [
+        "4 5"
+      ],
+      "explanation": "结构体值拷贝。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-V2",
+      "family_id": "C-structs-T1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "struct S{int x;};struct S a={5},b=a;b.x++;printf(\"%d %d\",a.x,b.x);",
+      "answer": "5 6",
+      "accepted": [
+        "5 6"
+      ],
+      "explanation": "结构体值拷贝。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-V3",
+      "family_id": "C-structs-T1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "struct S{int x;};struct S a={6},b=a;b.x++;printf(\"%d %d\",a.x,b.x);",
+      "answer": "6 7",
+      "accepted": [
+        "6 7"
+      ],
+      "explanation": "结构体值拷贝。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-V4",
+      "family_id": "C-structs-T1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "struct S{int x;};struct S a={7},b=a;b.x++;printf(\"%d %d\",a.x,b.x);",
+      "answer": "7 8",
+      "accepted": [
+        "7 8"
+      ],
+      "explanation": "结构体值拷贝。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-structs-V5",
+      "family_id": "C-structs-T1",
+      "subject": "c",
+      "module": "structs",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "struct S{int x;};struct S a={8},b=a;b.x++;printf(\"%d %d\",a.x,b.x);",
+      "answer": "8 9",
+      "accepted": [
+        "8 9"
+      ],
+      "explanation": "结构体值拷贝。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-V1",
+      "family_id": "C-preproc-T1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=4; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "5",
+      "accepted": [
+        "5"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-V2",
+      "family_id": "C-preproc-T1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=5; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "4",
+      "accepted": [
+        "4"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-V3",
+      "family_id": "C-preproc-T1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=6; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "7",
+      "accepted": [
+        "7"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-V4",
+      "family_id": "C-preproc-T1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=7; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "6",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-preproc-V5",
+      "family_id": "C-preproc-T1",
+      "subject": "c",
+      "module": "preproc",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int x=8; int y=x%2==0?x+1:x-1; printf(\"%d\",y);",
+      "answer": "9",
+      "accepted": [
+        "9"
+      ],
+      "explanation": "先判断奇偶，再执行条件表达式的一侧。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-V1",
+      "family_id": "C-files-T1",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "文件中为 4 5，成功读取两个整数a、b后 printf(\"%d\",a+b);",
+      "answer": "9",
+      "accepted": [
+        "9"
+      ],
+      "explanation": "按给定文件前提求和。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-V2",
+      "family_id": "C-files-T1",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "文件中为 5 6，成功读取两个整数a、b后 printf(\"%d\",a+b);",
+      "answer": "11",
+      "accepted": [
+        "11"
+      ],
+      "explanation": "按给定文件前提求和。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-V3",
+      "family_id": "C-files-T1",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "文件中为 6 7，成功读取两个整数a、b后 printf(\"%d\",a+b);",
+      "answer": "13",
+      "accepted": [
+        "13"
+      ],
+      "explanation": "按给定文件前提求和。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-V4",
+      "family_id": "C-files-T1",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "文件中为 7 8，成功读取两个整数a、b后 printf(\"%d\",a+b);",
+      "answer": "15",
+      "accepted": [
+        "15"
+      ],
+      "explanation": "按给定文件前提求和。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-files-V5",
+      "family_id": "C-files-T1",
+      "subject": "c",
+      "module": "files",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "文件中为 8 9，成功读取两个整数a、b后 printf(\"%d\",a+b);",
+      "answer": "17",
+      "accepted": [
+        "17"
+      ],
+      "explanation": "按给定文件前提求和。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-V1",
+      "family_id": "C-algorithms-T1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=4;i++)s+=i; printf(\"%d\",s);",
+      "answer": "10",
+      "accepted": [
+        "10"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-V2",
+      "family_id": "C-algorithms-T1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=5;i++)s+=i; printf(\"%d\",s);",
+      "answer": "15",
+      "accepted": [
+        "15"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-V3",
+      "family_id": "C-algorithms-T1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=6;i++)s+=i; printf(\"%d\",s);",
+      "answer": "21",
+      "accepted": [
+        "21"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-V4",
+      "family_id": "C-algorithms-T1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=7;i++)s+=i; printf(\"%d\",s);",
+      "answer": "28",
+      "accepted": [
+        "28"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "C-algorithms-V5",
+      "family_id": "C-algorithms-T1",
+      "subject": "c",
+      "module": "algorithms",
+      "kind": "trace",
+      "difficulty": 1,
+      "prompt": "参数变式：写出结果；代码片段已包含所需声明和头文件。",
+      "code": "int i,s=0; for(i=1;i<=8;i++)s+=i; printf(\"%d\",s);",
+      "answer": "36",
+      "accepted": [
+        "36"
+      ],
+      "explanation": "循环包含上界。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "c-foundations-v1"
+    },
+    {
+      "id": "E-F1",
+      "family_id": "E-F1",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：She ____ (study) English every evening.",
+      "code": "",
+      "answer": "studies",
+      "accepted": [
+        "studies"
+      ],
+      "explanation": "一般现在时第三人称单数。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F2",
+      "family_id": "E-F2",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：We ____ (finish) the task yesterday.",
+      "code": "",
+      "answer": "finished",
+      "accepted": [
+        "finished"
+      ],
+      "explanation": "yesterday 对应一般过去时。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F3",
+      "family_id": "E-F3",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：Look! The students ____ (read) in the library.",
+      "code": "",
+      "answer": "are reading",
+      "accepted": [
+        "are reading"
+      ],
+      "explanation": "现在进行时。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F4",
+      "family_id": "E-F4",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：This program is ____ (easy) than that one.",
+      "code": "",
+      "answer": "easier",
+      "accepted": [
+        "easier"
+      ],
+      "explanation": "比较级。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F5",
+      "family_id": "E-F5",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：He has lived here ____ 2020.",
+      "code": "",
+      "answer": "since",
+      "accepted": [
+        "since"
+      ],
+      "explanation": "since 后接起始时间。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F6",
+      "family_id": "E-F6",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：I am interested ____ computer science.",
+      "code": "",
+      "answer": "in",
+      "accepted": [
+        "in"
+      ],
+      "explanation": "be interested in。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F7",
+      "family_id": "E-F7",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：The book ____ I borrowed is useful.",
+      "code": "",
+      "answer": "that",
+      "accepted": [
+        "that",
+        "which"
+      ],
+      "explanation": "限制性定语从句可用 that 或 which。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F8",
+      "family_id": "E-F8",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：If it rains tomorrow, we ____ (stay) indoors.",
+      "code": "",
+      "answer": "will stay",
+      "accepted": [
+        "will stay"
+      ],
+      "explanation": "条件从句一般现在时，主句一般将来时。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F9",
+      "family_id": "E-F9",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：The classroom ____ (clean) every day.",
+      "code": "",
+      "answer": "is cleaned",
+      "accepted": [
+        "is cleaned"
+      ],
+      "explanation": "一般现在时被动语态。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F10",
+      "family_id": "E-F10",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：She enjoys ____ (solve) problems.",
+      "code": "",
+      "answer": "solving",
+      "accepted": [
+        "solving"
+      ],
+      "explanation": "enjoy 后接动名词。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F11",
+      "family_id": "E-F11",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：There ____ (be) two files on the desktop.",
+      "code": "",
+      "answer": "are",
+      "accepted": [
+        "are"
+      ],
+      "explanation": "主语为复数。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-F12",
+      "family_id": "E-F12",
+      "subject": "english",
+      "module": "grammar",
+      "kind": "fill",
+      "difficulty": 1,
+      "prompt": "填入正确形式或适当单词：You should ____ (check) the result carefully.",
+      "code": "",
+      "answer": "check",
+      "accepted": [
+        "check"
+      ],
+      "explanation": "情态动词后用动词原形。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R1",
+      "family_id": "E-R1",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "A small study group meets twice a week. Before each meeting, members solve problems alone. During the meeting, they explain different solutions instead of copying answers. Afterward, each person writes a short summary.\n\n用英语简短回答：How often does the group meet?",
+      "code": "",
+      "answer": "Twice a week.",
+      "accepted": [
+        "Twice a week",
+        "Twice a week."
+      ],
+      "explanation": "频率信息在首句。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R2",
+      "family_id": "E-R2",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "A small study group meets twice a week. Before each meeting, members solve problems alone. During the meeting, they explain different solutions instead of copying answers. Afterward, each person writes a short summary.\n\n用英语简短回答：What do members do before a meeting?",
+      "code": "",
+      "answer": "They solve problems alone.",
+      "accepted": null,
+      "explanation": "注意 before each meeting 后的信息。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R3",
+      "family_id": "E-R3",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "Lin used to watch coding videos without writing programs. She later began pausing each lesson and testing examples herself. Although the process felt slower, she could explain errors more clearly after two weeks.\n\n用英语简短回答：What change did Lin make?",
+      "code": "",
+      "answer": "She paused lessons and tested examples herself.",
+      "accepted": null,
+      "explanation": "答案需包含暂停课程和亲自测试。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R4",
+      "family_id": "E-R4",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "Lin used to watch coding videos without writing programs. She later began pausing each lesson and testing examples herself. Although the process felt slower, she could explain errors more clearly after two weeks.\n\n用英语简短回答：How did the new process initially feel?",
+      "code": "",
+      "answer": "Slower.",
+      "accepted": [
+        "slower",
+        "Slower."
+      ],
+      "explanation": "although 引出表面上的不利感受。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R5",
+      "family_id": "E-R5",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "The city library lends laptops to students who do not own one. A laptop may be borrowed for seven days. Students must save personal files elsewhere because every returned device is reset.\n\n用英语简短回答：For how many days may a laptop be borrowed?",
+      "code": "",
+      "answer": "Seven days.",
+      "accepted": [
+        "Seven days",
+        "Seven days.",
+        "7 days",
+        "seven"
+      ],
+      "explanation": "原文给出 seven days。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R6",
+      "family_id": "E-R6",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "The city library lends laptops to students who do not own one. A laptop may be borrowed for seven days. Students must save personal files elsewhere because every returned device is reset.\n\n用英语简短回答：Why should students save personal files elsewhere?",
+      "code": "",
+      "answer": "Because every returned device is reset.",
+      "accepted": null,
+      "explanation": "因果关系由 because 引出。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R7",
+      "family_id": "E-R7",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "A school garden collects rainwater in a large tank. Volunteers use it to water vegetables in dry weather. The system saves tap water, but students still check the tank regularly to prevent leaks.\n\n用英语简短回答：What is the rainwater used for?",
+      "code": "",
+      "answer": "It is used to water vegetables in dry weather.",
+      "accepted": null,
+      "explanation": "回答用途，不能只写收集地点。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R8",
+      "family_id": "E-R8",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "A school garden collects rainwater in a large tank. Volunteers use it to water vegetables in dry weather. The system saves tap water, but students still check the tank regularly to prevent leaks.\n\n用英语简短回答：Why do students check the tank?",
+      "code": "",
+      "answer": "To prevent leaks.",
+      "accepted": null,
+      "explanation": "目的状语 to prevent leaks。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R9",
+      "family_id": "E-R9",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "Ming planned to review all subjects on Sunday. When this left him exhausted, he divided the work into shorter sessions across the week. He now leaves Saturday afternoon free to review unfinished tasks.\n\n用英语简短回答：When does Ming review unfinished tasks?",
+      "code": "",
+      "answer": "On Saturday afternoon.",
+      "accepted": [
+        "Saturday afternoon",
+        "On Saturday afternoon",
+        "On Saturday afternoon."
+      ],
+      "explanation": "明确时间。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-R10",
+      "family_id": "E-R10",
+      "subject": "english",
+      "module": "reading",
+      "kind": "reading",
+      "difficulty": 1,
+      "prompt": "Ming planned to review all subjects on Sunday. When this left him exhausted, he divided the work into shorter sessions across the week. He now leaves Saturday afternoon free to review unfinished tasks.\n\n用英语简短回答：Summarize the main change in his plan.",
+      "code": "",
+      "answer": "He spread the work into shorter sessions across the week.",
+      "accepted": null,
+      "explanation": "概括“集中一天”改为“分散到每周多次短时段”。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-X1",
+      "family_id": "E-X1",
+      "subject": "english",
+      "module": "translation",
+      "kind": "translation",
+      "difficulty": 2,
+      "prompt": "把“请在提交前检查你的代码。”译成英语。",
+      "code": "",
+      "answer": "Please check your code before submitting it.",
+      "accepted": null,
+      "explanation": "祈使句、before及动名词结构。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-X2",
+      "family_id": "E-X2",
+      "subject": "english",
+      "module": "translation",
+      "kind": "translation",
+      "difficulty": 2,
+      "prompt": "把“每天练习比考前突击更有帮助。”译成英语。",
+      "code": "",
+      "answer": "Daily practice is more helpful than last-minute study.",
+      "accepted": null,
+      "explanation": "比较级结构；接受语义等价表达。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-X3",
+      "family_id": "E-X3",
+      "subject": "english",
+      "module": "translation",
+      "kind": "translation",
+      "difficulty": 2,
+      "prompt": "把“如果遇到问题，我会向老师求助。”译成英语。",
+      "code": "",
+      "answer": "If I have a problem, I will ask my teacher for help.",
+      "accepted": null,
+      "explanation": "条件句时态与 ask ... for help。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-X4",
+      "family_id": "E-X4",
+      "subject": "english",
+      "module": "translation",
+      "kind": "translation",
+      "difficulty": 2,
+      "prompt": "译成中文：Learning a skill requires patience as well as practice.",
+      "code": "",
+      "answer": "学习一项技能既需要练习，也需要耐心。",
+      "accepted": null,
+      "explanation": "as well as 表示并列补充。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-X5",
+      "family_id": "E-X5",
+      "subject": "english",
+      "module": "translation",
+      "kind": "translation",
+      "difficulty": 2,
+      "prompt": "译成中文：The result may look correct, but the method still needs to be tested.",
+      "code": "",
+      "answer": "结果看起来可能正确，但方法仍然需要检验。",
+      "accepted": null,
+      "explanation": "may、转折及被动意义。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-X6",
+      "family_id": "E-X6",
+      "subject": "english",
+      "module": "translation",
+      "kind": "translation",
+      "difficulty": 2,
+      "prompt": "译成中文：Students who review their mistakes regularly can better understand their weaknesses.",
+      "code": "",
+      "answer": "经常复习错题的学生能够更好地了解自己的薄弱之处。",
+      "accepted": null,
+      "explanation": "定语从句修饰 students；regularly不能漏译。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-W1",
+      "family_id": "E-W1",
+      "subject": "english",
+      "module": "writing",
+      "kind": "writing",
+      "difficulty": 2,
+      "prompt": "写一封80—100词的英文邮件给学习伙伴，邀请对方参加周六的C语言练习。包含时间地点、活动内容、希望回复。\n本题字数是原创训练要求，不宣称为官方题型或字数规定。",
+      "code": "",
+      "answer": "Dear Alex,\nWould you like to join our coding practice this Saturday? We will meet in the library at 9 a.m. First, we will work on input and output problems independently. Then we will compare our solutions and discuss common errors. Please bring your laptop and a notebook. If you are free, let me know by Friday so that I can prepare the exercises. I hope we can learn from each other and build better study habits.\nBest,\nLi",
+      "accepted": null,
+      "explanation": "自评维度：内容覆盖、组织衔接、语法词汇、格式与字数；语义题等待人工或AI辅助复核，不套用唯一标准答案。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-W2",
+      "family_id": "E-W2",
+      "subject": "english",
+      "module": "writing",
+      "kind": "writing",
+      "difficulty": 2,
+      "prompt": "写80—100词短文，介绍你的专升本学习计划，包含目标、两项具体措施、如何检查进度。\n本题字数是原创训练要求，不宣称为官方题型或字数规定。",
+      "code": "",
+      "answer": "参考结构：目标 → 每日英语与专业课安排 → 独立练习和复盘 → 每周检查。内容切题、段落连贯比堆砌复杂句更重要。",
+      "accepted": null,
+      "explanation": "自评维度：内容覆盖、组织衔接、语法词汇、格式与字数；语义题等待人工或AI辅助复核，不套用唯一标准答案。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-W3",
+      "family_id": "E-W3",
+      "subject": "english",
+      "module": "writing",
+      "kind": "writing",
+      "difficulty": 2,
+      "prompt": "写80—100词英文通知，宣布一次错题讨论会，写明时间地点、参加对象、准备事项及联系办法。\n本题字数是原创训练要求，不宣称为官方题型或字数规定。",
+      "code": "",
+      "answer": "参考结构：Notice标题 → 时间地点及对象 → 每人准备一道错题与尝试过程 → 联系方式。注意通知语体和信息完整。",
+      "accepted": null,
+      "explanation": "自评维度：内容覆盖、组织衔接、语法词汇、格式与字数；语义题等待人工或AI辅助复核，不套用唯一标准答案。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    },
+    {
+      "id": "E-W4",
+      "family_id": "E-W4",
+      "subject": "english",
+      "module": "writing",
+      "kind": "writing",
+      "difficulty": 2,
+      "prompt": "写80—100词短文，比较看视频和动手练习的作用，表明你如何结合二者。\n本题字数是原创训练要求，不宣称为官方题型或字数规定。",
+      "code": "",
+      "answer": "参考结构：视频帮助理解概念 → 动手发现错误 → 两者结合的具体安排 → 总结观点。此为写作框架，不是唯一范文。",
+      "accepted": null,
+      "explanation": "自评维度：内容覆盖、组织衔接、语法词汇、格式与字数；语义题等待人工或AI辅助复核，不套用唯一标准答案。",
+      "tests": [],
+      "origin": "original",
+      "source_note": "拾光学习原创专项题；非历年真题、非预测题",
+      "review_status": "reference_checked",
+      "rubric": [
+        "思路与知识点正确",
+        "步骤或关键语句完整",
+        "边界与输入输出符合题意"
+      ],
+      "pool_id": "hubei-english-v1"
+    }
+  ]
+}
